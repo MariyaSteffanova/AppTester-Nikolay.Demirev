@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Vote";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+    <h3>@(((JustPoll.DAL.Poll)ViewBag.Poll).Title)</h3>
+</header>
+<section id="Polls">
+    <div class="Poll">
+        @foreach (JustPoll.DAL.PossibleAnswer answer in ((JustPoll.DAL.Poll)ViewBag.Poll).PossibleAnswers)
+        {
+            <section class="PollHeader">
+	        <div class="QuestionText">
+    	        @answer.text
+            </div>
+            <div class="VoteButtonContainter">
+                @if (ViewBag.CanUserVote)
+                {
+	                <a href="~/Vote/Vote?answerId=@answer.id" >Vote!</a>
+                }
+                else
+                {
+                    <span class="disabledVoteButton">Vote!</span>
+                }
+	        </div>
+            <div class="clear"></div>
+        </section>
+        }
+        <nav id="Navigation">
+            @if (Session["pageNumber"] != null)
+            {
+	            <a href="~/Home/Index?pageNumber=@Session["pageNumber"]">Back to the list of all polls</a>
+            }
+            else
+            {
+                <a href="~/Home/Index?pageNumber=1">Back to the list of all polls</a>
+            }
+
+            @if (!ViewBag.CanUserVote)
+            {
+                <span class="voteAgaingWarning" id="@ViewBag.Poll.id">You can vote again after: @ViewBag.TimeToNextVote</span>
+            }
+	    </nav>
+        <div class="clear"></div>
+    </div>            
+    <footer>
+        Copyright &copy; Just Polls (forever beta) 2012
+    </footer>
+</section>

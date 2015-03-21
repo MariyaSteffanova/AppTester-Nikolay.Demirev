@@ -1,0 +1,25 @@
+﻿@model JustPoll.DAL.Vote
+
+<tr @if (Model != null) {
+    @:data-pkey="@Model.id"
+}>
+    <td>
+        @Html.DropDownList("answerId", String.Empty)
+        @Html.ValidationMessageFor(model => model.answerId)
+    </td>
+    <td>
+        @Html.EditorFor(model => model.Date)
+        @Html.ValidationMessageFor(model => model.Date)
+    </td>
+    <td>
+        @Html.EditorFor(model => model.voterIp)
+        @Html.ValidationMessageFor(model => model.voterIp)
+    </td>
+    <td>
+@if (ViewContext.RouteData.Values["Action"].ToString() == "Edit") {
+        <button class="editRow">Save</button><button class="cancelEditRow">Cancel</button>
+} else {
+        <button class="createRow">Create</button><button class="cancelCreateRow">Cancel</button>
+}
+    </td>
+</tr>

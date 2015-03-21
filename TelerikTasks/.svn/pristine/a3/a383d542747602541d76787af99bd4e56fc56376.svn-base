@@ -1,0 +1,19 @@
+﻿@model IEnumerable<JustPoll.DAL.Vote>
+
+@foreach (var item in Model) {
+    <tr data-pkey="@item.id">
+        <td>
+            @Html.DisplayFor(modelItem => item.PossibleAnswer.text)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.voterIp)
+        </td>
+        <td class="rowControl hidden">
+            <a href="#makeRowEditable" class="makeRowEditable">Edit</a> |
+            <a href="#deleteRow" class="deleteRow">Delete</a>
+        </td>
+    </tr>
+}

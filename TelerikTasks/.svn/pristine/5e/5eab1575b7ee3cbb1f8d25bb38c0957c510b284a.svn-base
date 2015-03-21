@@ -1,0 +1,205 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <title>HTML5-Tables-Forms-Frames - Task06</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<table>
+		<colgroup>
+			<col width="450" />
+			<col width="300" />
+		</colgroup>
+		
+		<tr>
+			<td colspan="2">
+				<center>
+					<h1>
+					<a href="http://www.google.com/">Apple</a>
+					<a href="http://www.google.com/">Toshiba</a>
+					<a href="http://www.google.com/">Lenovo</a>
+					<a href="http://www.google.com/">Dell</a>
+					<a href="http://www.google.com/">Asus</a>
+					<a href="http://www.google.com/">Hacer</a>
+					<a href="http://www.google.com/">HP</a>
+					</h1>
+				</center>
+				<hr />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td>
+							<fieldset >
+								<legend>Apple MackBook Air</legend>
+								<table>
+									<tr>
+										<td rowspan="2">
+											<img src="macbook.jpg" width="75"/>
+										</td>
+										
+										<td>64 GB SSD</td>
+									</tr>
+									
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>								
+							</fieldset>
+						</td>
+						
+						<td>
+							<fieldset >
+								<legend>Apple MackBook Air</legend>
+								<table>
+									<tr>
+										<td rowspan="2">
+											<img src="macbook.jpg" width="75"/>
+										</td>
+										
+										<td>64 GB SSD</td>
+									</tr>
+									
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>								
+							</fieldset>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<fieldset >
+								<legend>Apple MackBook Air</legend>
+								<table>
+									<tr>
+										<td rowspan="2">
+											<img src="macbook.jpg" width="75"/>
+										</td>
+										
+										<td>64 GB SSD</td>
+									</tr>
+									
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>								
+							</fieldset>
+						</td>
+						
+						<td>
+							<fieldset >
+								<legend>Apple MackBook Air</legend>
+								<table>
+									<tr>
+										<td rowspan="2">
+											<img src="macbook.jpg" width="75"/>
+										</td>
+										
+										<td>64 GB SSD</td>
+									</tr>
+									
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>								
+							</fieldset>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<fieldset >
+								<legend>Apple MackBook Air</legend>
+								<table>
+									<tr>
+										<td rowspan="2">
+											<img src="macbook.jpg" width="75"/>
+										</td>
+										
+										<td>64 GB SSD</td>
+									</tr>
+									
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>								
+							</fieldset>
+						</td>
+						
+						<td>
+							<fieldset >
+								<legend>Apple MackBook Air</legend>
+								<table>
+									<tr>
+										<td rowspan="2">
+											<img src="macbook.jpg" width="75"/>
+										</td>
+										
+										<td>64 GB SSD</td>
+									</tr>
+									
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>								
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+			</td>
+			
+			<td>
+				<table>
+					<tr><h1>Min price: 500 USD<h1></tr>
+					<tr><input type="range" size="15" min="0" max="150" value="75" /></tr>
+					<tr><h1>Max price: 1500 USD</h1></tr>
+					<tr><input type="range" size="15" min="0" max="150" value="75" /></tr>
+					<tr><h1>Min RAM: 4GB</h1></tr>
+					<tr><input type="range" size="15" min="0" max="150" value="75" /></tr>
+					<tr><h1>Max RAM: 16GB</h1></tr>
+					<tr><input type="range" size="15" min="0" max="150" value="75" /></tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

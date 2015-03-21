@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="JustPollsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="JustPollsModelStoreContainer">
+          <EntitySet Name="Polls" EntityType="JustPollsModel.Store.Polls" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PossibleAnswers" EntityType="JustPollsModel.Store.PossibleAnswers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Votes" EntityType="JustPollsModel.Store.Votes" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_PossibleAnswers_Polls" Association="JustPollsModel.Store.FK_PossibleAnswers_Polls">
+            <End Role="Polls" EntitySet="Polls" />
+            <End Role="PossibleAnswers" EntitySet="PossibleAnswers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Votes_PossibleAnswers" Association="JustPollsModel.Store.FK_Votes_PossibleAnswers">
+            <End Role="PossibleAnswers" EntitySet="PossibleAnswers" />
+            <End Role="Votes" EntitySet="Votes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Polls">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PossibleAnswers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PollId" Type="int" Nullable="false" />
+          <Property Name="text" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="VotesCount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Votes">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="answerId" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="voterIp" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_PossibleAnswers_Polls">
+          <End Role="Polls" Type="JustPollsModel.Store.Polls" Multiplicity="1" />
+          <End Role="PossibleAnswers" Type="JustPollsModel.Store.PossibleAnswers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Polls">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PossibleAnswers">
+              <PropertyRef Name="PollId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Votes_PossibleAnswers">
+          <End Role="PossibleAnswers" Type="JustPollsModel.Store.PossibleAnswers" Multiplicity="1" />
+          <End Role="Votes" Type="JustPollsModel.Store.Votes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PossibleAnswers">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Votes">
+              <PropertyRef Name="answerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JustPollsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="JustPollsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Polls" EntityType="JustPollsModel.Poll" />
+          <EntitySet Name="PossibleAnswers" EntityType="JustPollsModel.PossibleAnswer" />
+          <EntitySet Name="Votes" EntityType="JustPollsModel.Vote" />
+          <AssociationSet Name="FK_PossibleAnswers_Polls" Association="JustPollsModel.FK_PossibleAnswers_Polls">
+            <End Role="Polls" EntitySet="Polls" />
+            <End Role="PossibleAnswers" EntitySet="PossibleAnswers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Votes_PossibleAnswers" Association="JustPollsModel.FK_Votes_PossibleAnswers">
+            <End Role="PossibleAnswers" EntitySet="PossibleAnswers" />
+            <End Role="Votes" EntitySet="Votes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Poll">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="PossibleAnswers" Relationship="JustPollsModel.FK_PossibleAnswers_Polls" FromRole="Polls" ToRole="PossibleAnswers" />
+        </EntityType>
+        <EntityType Name="PossibleAnswer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PollId" Type="Int32" Nullable="false" />
+          <Property Name="text" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="VotesCount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Poll" Relationship="JustPollsModel.FK_PossibleAnswers_Polls" FromRole="PossibleAnswers" ToRole="Polls" />
+          <NavigationProperty Name="Votes" Relationship="JustPollsModel.FK_Votes_PossibleAnswers" FromRole="PossibleAnswers" ToRole="Votes" />
+        </EntityType>
+        <EntityType Name="Vote">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="answerId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="voterIp" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PossibleAnswer" Relationship="JustPollsModel.FK_Votes_PossibleAnswers" FromRole="Votes" ToRole="PossibleAnswers" />
+        </EntityType>
+        <Association Name="FK_PossibleAnswers_Polls">
+          <End Role="Polls" Type="JustPollsModel.Poll" Multiplicity="1" />
+          <End Role="PossibleAnswers" Type="JustPollsModel.PossibleAnswer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Polls">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PossibleAnswers">
+              <PropertyRef Name="PollId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Votes_PossibleAnswers">
+          <End Role="PossibleAnswers" Type="JustPollsModel.PossibleAnswer" Multiplicity="1" />
+          <End Role="Votes" Type="JustPollsModel.Vote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PossibleAnswers">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Votes">
+              <PropertyRef Name="answerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JustPollsModelStoreContainer" CdmEntityContainer="JustPollsEntities">
+          <EntitySetMapping Name="Polls"><EntityTypeMapping TypeName="JustPollsModel.Poll"><MappingFragment StoreEntitySet="Polls">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="Title" ColumnName="Title" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PossibleAnswers"><EntityTypeMapping TypeName="JustPollsModel.PossibleAnswer"><MappingFragment StoreEntitySet="PossibleAnswers">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="PollId" ColumnName="PollId" />
+            <ScalarProperty Name="text" ColumnName="text" />
+            <ScalarProperty Name="VotesCount" ColumnName="VotesCount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Votes"><EntityTypeMapping TypeName="JustPollsModel.Vote"><MappingFragment StoreEntitySet="Votes">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="answerId" ColumnName="answerId" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+            <ScalarProperty Name="voterIp" ColumnName="voterIp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="JustPollDal">
+        <EntityTypeShape EntityType="JustPollsModel.Poll" Width="1.5" PointX="0.75" PointY="1.125" Height="1.7879850260416672" IsExpanded="true" />
+        <EntityTypeShape EntityType="JustPollsModel.PossibleAnswer" Width="1.5" PointX="3" PointY="0.875" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="JustPollsModel.Vote" Width="1.5" PointX="5.25" PointY="1" Height="1.9802864583333335" IsExpanded="true" />
+        <AssociationConnector Association="JustPollsModel.FK_PossibleAnswers_Polls" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.0189925130208337" />
+          <ConnectorPoint PointX="3" PointY="2.0189925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="JustPollsModel.FK_Votes_PossibleAnswers" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="1.9901432291666668" />
+          <ConnectorPoint PointX="5.25" PointY="1.9901432291666668" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

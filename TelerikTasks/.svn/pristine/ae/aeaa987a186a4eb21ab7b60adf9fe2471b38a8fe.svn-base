@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="outerFrame">
+			<div id="sign">
+				<span id="cal">Calculator</span>
+			</div>
+			<span id="but">
+				<input class="buttons" type="button" name="button" value=" - "style="background-color:white" />
+				<input class="buttons" type="button" name="button" value=" o "style="background-color:white" />
+				<input class="buttons" type="button" name="button" value="   x   " style="background-color:red"/>
+			</span>
+
+			<div id="innerFrame">
+				<div id="menu">
+				<span id="view"><u>V</u>iew</span>
+				<span id="edit"><u>E</u>dit</u></span>
+				<span id="help"><u>H</u>elp</span>
+				</div>
+				<div id="screen">
+					<span id="number">35678654335</span>
+				<div>
+				<div id="screen2">
+					<table width=100% height=50% id="first" cellpadding=0 cellspacing=0>
+						<tr>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+						</tr>
+						<tr>
+							<td>63</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>47</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>32</td>
+						</tr>
+						<tr>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+						</tr>
+						<tr>
+							<td>63</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>47</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>32</td>
+						</tr>
+					</table>
+				<div>
+				<table id="second" cellpadding=3 cellspacing=7>
+					<tr>
+						<td rowspan=3>
+						<input type="radio" name="a">Hex</input><br />
+						<input type="radio" name="a">Dec</input><br />
+						<input type="radio" name="a">Oct</input><br />
+						<input type="radio" name="a">Bin</input><br />						
+						</td>
+						<td></td>
+						<td class="b c" >Mod</td>
+						<td class="b" >A</td>
+						<td class="b" >MC</td>
+						<td class="b" >MR</td>
+						<td class="b" >MS</td>
+						<td class="b" >M+</td>
+						<td class="b" >M-</td>
+					</tr>
+					<tr>	
+						<td class="b c" >(</td>
+						<td class="b c" >)</td>
+						<td class="b" >B</td>
+						<td class="b c" id="arrow" align="center" ></td>
+						<td class="b c" >CE</td>
+						<td class="b c" >C</td>
+						<td class="b c" id="pm" ></td>
+						<td class="b" id="square" ></td>
+					</tr>
+					<tr>	
+						<td class="b c" >RoL</td>
+						<td class="b c" >RoR</td>
+						<td class="b" >C</td>
+						<td class="b d" >7</td>
+						<td class="b d" >8</td>
+						<td class="b d" >9</td>
+						<td class="b c" >/</td>
+						<td class="b" >%</td>
+						
+					</tr>
+					<tr>
+						<td rowspan=3>
+							<input type="radio" name="a">Qword </input><br />
+							<input type="radio" name="a">Dword</input><br />
+							<input type="radio" name="a">Word</input><br />
+							<input type="radio" name="a">Byte</input><br />
+						</td>
+						<td class="b c" >Or</td>
+						<td class="b c" >Xor</td>
+						<td class="b" >D</td>
+						<td class="b d" >4</td>
+						<td class="b d" >5</td>
+						<td class="b d" >6</td>
+						<td class="b c" >*</td>
+						<td class="b" >1/x</td>
+					
+					</tr>
+					<tr>	
+						<td class="b c" >Lsh</td>
+						<td class="b c" >Rsh</td>
+						<td class="b" >E</td>
+						<td class="b d" >1</td>
+						<td class="b d" >2</td>
+						<td class="b d" >3</td>
+						<td class="b c" >-</td>
+						<td rowspan=2 class="b c" >=</td>
+					</tr>
+					<tr>	
+						<td class="b c" >Not</td>
+						<td class="b c" >And</td>
+						<td class="b" >F</td>
+						<td colspan=2 class="b d" >0</td>
+						<td class="b" >.</td>
+						<td class="b c" >+</td>
+					</tr>
+				</table>
+			</div>			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+
+<html>
+
+<head>
+   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Task04</title>
+    <link rel="stylesheet" href="Task04-styles.css" />
+    <script src="Task04.js" type="text/javascript">
+  	</script>
+</head>
+
+<body onLoad="createDivs()">
+
+</body>
+
+</html>

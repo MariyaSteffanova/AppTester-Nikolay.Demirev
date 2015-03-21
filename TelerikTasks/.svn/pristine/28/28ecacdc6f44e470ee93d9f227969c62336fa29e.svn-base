@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html>
+
+<head>
+   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Task03</title>
+    <script src="Task03.js" type="text/javascript">
+  	</script>
+</head>
+
+<body>
+	<img src="img.jpg" alt="ninja"/>
+    <form>        
+        <input type="email" required="required" id="email" value="" />
+        <input type="submit" onSubmit="buttonClick()"  value="Click me!" />
+    </form>
+</body>
+
+</html>

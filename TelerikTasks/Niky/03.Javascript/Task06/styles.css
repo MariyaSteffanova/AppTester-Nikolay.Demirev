@@ -1,0 +1,25 @@
+body
+{
+	font-size: 100%;
+	font-family: Verdana, sans-serif;
+}
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#main
+{
+	margin: 40px auto 0 auto;
+	width: 200px;
+	height: 25px;
+	overflow: hidden;
+}
+
+#text
+{
+	width: 730px;
+	padding-left: 208px;
+}

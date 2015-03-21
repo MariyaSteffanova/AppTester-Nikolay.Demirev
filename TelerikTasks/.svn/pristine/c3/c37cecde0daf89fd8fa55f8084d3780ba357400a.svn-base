@@ -1,0 +1,35 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <title>HTML5 - Friends</title>
+</head>
+
+<body>
+<table>
+    <colgroup>
+        <col width="150"/>
+        <col width="150"/>
+        <col width="150"/>
+    </colgroup>
+    
+    <tr>
+        <td><a href="profile.html">Profile</a></td>
+        <td><a href="friends.html">Friends</a></td>
+        <td><a href="additionalInformation.html">Additional Information</a></td>
+    </tr>
+</table>
+
+<hr />
+<h1>Friends of Doncho</h1>
+<hr />
+
+<ol type="1">
+<li>Pesho</li>
+<li>Ivan</li>
+<li>Vasil</li>
+</ol>
+</body>
+
+</html>

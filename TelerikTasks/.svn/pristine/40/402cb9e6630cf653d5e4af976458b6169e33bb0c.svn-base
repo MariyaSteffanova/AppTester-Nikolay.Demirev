@@ -1,0 +1,33 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <title>HTML5 - Additional Information</title>
+</head>
+
+<body>
+<table>
+    <colgroup>
+        <col width="150"/>
+        <col width="150"/>
+        <col width="150"/>
+    </colgroup>
+    
+    <tr>
+        <td><a href="profile.html">Profile</a></td>
+        <td><a href="friends.html">Friends</a></td>
+        <td><a href="additionalInformation.html">Additional Information</a></td>
+    </tr>
+</table>
+
+<hr />
+<h1>Additional Information</h1>
+<hr />
+Student of <a href="http://www.uni-sofia.bg/">SU</a><br />
+Born in Bulgaria<br />
+Living in Sofia<br />
+Working in <a href="http://telerik.com/">Telerik</a><br />
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<META Http-Equiv="Content-Type" Content="text/html; charset=windows-1251">
+	<link rel="stylesheet" href="Task01-styles.css" />
+</head>
+
+<body>
+	<div id="ticket">
+		<table>		
+
+			<tr>
+				<td colspan="2" id="ticket-id">
+					Ticket ID: 409788
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="left-column">Name:</td>
+				<td class="right-column">
+					<img src="circle.png" />
+					<span class="white-text">Parker Seidel</span><br />
+					<span class="red-text">No Active Support</span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="left-column">Email:</td>
+				<td class="right-column">
+					<span class="white-text">Seidel@aptmail.com</span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="left-column">Response Time:</td>
+				<td class="right-column">
+					<span class="gray-text">72 hours , 60 hours left</span>
+				</td>
+			</tr>
+			
+						<tr>
+				<td class="left-column">Last action:</td>
+				<td class="right-column">
+					<span class="gray-text">Never been locked.</span><br />
+					<span class="white-text">Link to public post</span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="left-column">Status:</td>
+				<td class="right-column"><span class="orange-text">Not answered</span></td>
+			</tr>			
+
+		</table>
+	</div>
+</body>
+
+</html>

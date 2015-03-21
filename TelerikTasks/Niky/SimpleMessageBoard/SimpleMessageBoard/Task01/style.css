@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-image:url(Images/background.jpg);
+	font-family:Arial;
+}
+
+#wrapper
+{
+	width:600px;
+}
+
+header
+{
+	background-color:#C3D79C;
+	text-align:center;
+	height: 55px;
+	border: 2px solid #334867;
+	margin-bottom: 15px;
+}
+
+header > h1
+{
+	margin-top:9px;
+}
+
+.UserPost
+{
+	background-color: #BDCFE7;
+	border: 2px solid;
+	border-color: #2A486C;
+	padding: 18px;
+	margin-bottom: 15px;
+}
+
+.Author
+{
+	float:left;
+}
+
+.Date
+{
+	float:right;
+}
+
+.Votes
+{
+	float:right;
+	margin-right:20px;
+}
+
+.VoteUp
+{
+	background-image:url(Images/up.jpg);
+	height: 31px;
+	width: 44px;
+	border:none;
+	cursor:pointer;
+}
+
+.Score
+{
+	border: 1px dotted;
+	border-radius: 10px 10px 10px 10px;
+	padding: 4px;
+}
+
+.VoteDown
+{
+	background-image:url(Images/down.jpg);
+	height: 33px;
+	width: 42px;
+	border:none;
+	cursor:pointer;
+}
+
+.Clear
+{
+	clear:both;
+	padding-bottom: 15px;
+}
+
+.Post
+{
+	background-color: #C8D9EB;
+	border: 1px dotted #1A2C44;
+	border-radius: 10px 10px 10px 10px;
+	padding: 8px;
+}
+
+#Paging
+{
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#Paging > a
+{
+	text-decoration:none;
+	color: #000000;
+	border: 2px solid #2A486C;
+	background-color: #BDCFE7;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+#Paging > a:hover
+{
+	background-color: #EBF2FC;
+}
+
+#WritePost
+{
+	background-color: #BDCFE7;
+	border: 2px solid;
+	border-color: #2A486C;
+	padding: 18px;
+	margin-bottom: 15px;
+}
+
+#NewPostAuthor
+{
+	background-color: #EBF1F8;
+    border: 1px dotted #2E4C70;
+    font-size: 16px;
+    height: 26px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 60%;
+}
+
+#NewPostDate
+{
+	background-color: #C9D9EB;
+    border: 1px dotted #2E4C70;
+    font-size: 16px;
+    height: 26px;
+    text-align: center;
+    width: 19%;
+}
+
+#WritePostBody
+{
+	margin-top: 15px;
+}
+
+#NewPostMessage
+{
+	background-color: #EBF1F8;
+    border: 1px dotted #17375E;
+    float: left;
+    font-family: Arial;
+    font-size: 16px;
+    height: 63px;
+    width: 82%;
+}
+
+#NewPostSubmit
+{
+	background-color: #AEC87A;
+    border: 2px solid #1F497D;
+    border-radius: 8px 8px 8px 8px;
+    color: #000000;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    height: 67px;
+    width: 15%;
+	cursor:pointer;
+}
+
+footer
+{
+	background-color:#C3D79C;
+	text-align:center;
+	height: 35px;
+	border: 2px solid #334867;
+}
+
+footer > h3
+{
+	margin-top:6px;
+}

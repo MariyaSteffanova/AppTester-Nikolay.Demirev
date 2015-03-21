@@ -1,0 +1,1 @@
+select Distinct salary from Employees

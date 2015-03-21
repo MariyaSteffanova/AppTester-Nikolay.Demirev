@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+	<title>Just Polls</title>
+</head>
+
+<body>
+	<div id="wraper">
+		<header>
+        	<h3>Please answer the question "On a scale of 1 to 10 what is your favourite color of the alphabet?"</h3>
+        </header>
+        <section id="Polls">
+        	<div class="Poll">
+            	<section class="PollHeader">
+	                <div class="QuestionText">
+    	            	On a scale of 1 to 10 what is your favourite color of the alphabet?
+                    </div>
+                    <div class="VoteButtonContainter">
+	                	<a href="#" >Vote!</a>
+	                </div>
+                    <div class="clear"></div>
+                </section>
+                <section class="PollHeader">
+	                <div class="QuestionText">
+    	            	On a scale of 1 to 10 what is your favourite color of the alphabet?
+                    </div>
+                    <div class="VoteButtonContainter">
+	                	<a href="#" >Vote!</a>
+	                </div>
+                    <div class="clear"></div>
+                </section>
+                <section class="PollHeader">
+	                <div class="QuestionText">
+    	            	On a scale of 1 to 10 what is your favourite color of the alphabet?
+                    </div>
+                    <div class="VoteButtonContainter">
+	                	<a href="#" >Vote!</a>
+	                </div>
+                    <div class="clear"></div>
+                </section>
+                <section class="PollHeader">
+	                <div class="QuestionText">
+    	            	On a scale of 1 to 10 what is your favourite color of the alphabet?
+                    </div>
+                    <div class="VoteButtonContainter">
+	                	<a href="#" >Vote!</a>
+	                </div>
+                    <div class="clear"></div>
+                </section>
+                <nav id="Navigation">
+	            	<a href="#">Back to the list of all polls</a>
+                    <span class="voteAgaingWarning">You can vote again after: 10:11:46</span>
+	            </nav>
+                <div class="clear"></div>
+            </div>            
+            <footer>
+            	Copyright &copy; Just Polls (forever beta) 2012
+            </footer>
+        </section>
+    </div>
+</body>
+</html>

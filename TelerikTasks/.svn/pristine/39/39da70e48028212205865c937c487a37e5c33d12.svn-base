@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<META Http-Equiv="Content-Type" Content="text/html; charset=windows-1251">
+	<link rel="stylesheet" href="Task03-styles.css" />
+</head>
+
+<body>
+	<div id="main-frame">
+		<table>
+        	<tr>
+            	<th>
+                	<h1>Web Design Video Player</h1>
+                </th>
+            </tr>
+            
+        	<tr>
+            	<td>
+                	<div id="player">
+                    	<table>
+                        	<tr>
+                            	<td>
+                                	<img id="duel" src="duel.jpg" />
+                                </td>
+                                
+                                <td>
+                                	<div id="player-list">
+                                        <ul>
+                                            <li>
+                                            	<a href="http://www.google.com/" >
+                                                	Episode I - Phantom Menace
+                                                </a>
+                                            </li>
+                                            <li>
+                                            	<a href="http://www.google.com/" >
+                                                	Episode II - Attack of the Clones
+                                                </a>
+                                            </li>
+                                            <li>
+                                            	<a href="http://www.google.com/" >
+                                                	Episode III - Revenge of the Sith
+                                                </a>
+                                            </li>
+                                            <li>
+                                            	<a href="http://www.google.com/" >
+                                                	Episode IV - New Hope
+                                                </a>
+                                            </li>
+                                            <li>
+                                            	<a href="http://www.google.com/" >
+                                                	Episode V - The Empire strikes back
+                                                </a>
+                                            </li>
+                                            <li>
+                                            	<a href="http://www.google.com/" >
+                                                	Episode VI - Return of the Jedi
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                            	<td>
+                                	<input id="movie-time" value="50" type="range" />
+                                </td>
+                                <td>
+                                    	01:23:35 / 01:29:47
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                            	<td>
+                                	<button class="movie-control">
+                                    	Previous
+                                    </button>
+                                    
+                                    <button class="movie-control">
+                                    	Play
+                                    </button>
+                                    
+                                    <button class="movie-control">
+                                    	Pause
+                                    </button>
+                                    
+                                    <button class="movie-control">
+                                    	Stop
+                                    </button>
+                                    
+                                    <button class="movie-control">
+                                    	Next
+                                    </button>
+                                </td>
+                                
+                                <td>
+                                	Volume:
+                                	<input id="movie-volume" value="73" type="range" />
+                                    73%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

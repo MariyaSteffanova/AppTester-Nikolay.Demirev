@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Polls";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <header>
+        	<h3>Just Polls - List of all polls - Page @ViewBag.CurrentPageNumber / @ViewBag.PagesCount</h3>
+        </header>
+        <section id="Polls">
+            @foreach (JustPoll.DAL.Poll poll in ViewBag.Polls)
+            {
+                <div class="Poll">
+            	    <header class="PollHeader">
+	                    <div class="QuestionText">
+    	            	    @poll.Title
+                        </div>
+                        <div class="VoteButtonContainter">
+	                	    <a href="~/Vote/Index?pollId=@poll.id" >Vote!</a>
+	                    </div>
+                        <div class="clear"></div>
+                    </header>
+                    <section class="PollStatistics">
+                	    <div class="Answers">
+                            @foreach (JustPoll.DAL.PossibleAnswer answer in poll.PossibleAnswers.OrderByDescending(x => x.VotesCount).ToList())
+                            {
+                                <div class="Answer">
+                                    <div class="NegativeVotesProgress" style="width: 125px;"><div class="PositiveVotesProgress" style="width: @((int)Math.Ceiling(125 * JustPoll.DAL.VotesDAL.CalculateVotesPercents(poll.id, answer.VotesCount)))px;">&nbsp;</div></div>
+                                    <div class="AnswerText">@answer.text</div>
+                                    <div class="VotesCount">(@answer.VotesCount votes)</div>
+                                    <div class="clear"></div>
+                                </div>
+                            }
+                        </div>
+                    </section>
+                </div>
+            }
+            </section>
+            <nav id="Paging">
+                @if (ViewBag.CurrentPageNumber > 1)
+                {
+            	    <a href="~/Home/Index?pageNumber=1">First</a>
+                    <a href="~/Home/Index?pageNumber=@(ViewBag.CurrentPageNumber - 1)">Prev</a>
+                }
+                @for (int i = 1; i <= ViewBag.PagesCount; i++)
+                {
+                    if (i != ViewBag.CurrentPageNumber)
+                    {
+                        <a href="~/Home/Index?pageNumber=@i">@i</a>
+                    }
+                    else
+                    {
+                        <span class="Active">@i</span>
+                    }
+                }
+                @if (ViewBag.CurrentPageNumber < ViewBag.PagesCount)
+                {
+                    <a href="~/Home/Index?pageNumber=@(ViewBag.CurrentPageNumber + 1)">Next</a>
+                    <a href="~/Home/Index?pageNumber=@ViewBag.PagesCount">Last</a>   
+                }
+            </nav>
+            <footer>
+            	Copyright &copy; Just Polls (forever beta) 2012
+            </footer>
+        </section>

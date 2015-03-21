@@ -1,0 +1,54 @@
+﻿@foreach (var message in ViewBag.Messages)
+{
+    <section class="UserPost">
+        <div class="Author">Author: <strong>@message.Author</strong></div>
+        <div class="Date">Date: <strong>@message.Date</strong></div>
+	    <div class="Votes">
+            <button class="postupvote" data-postid="@message.MessageId"></button>
+				    <span class="postvotescount" id="postvotescount_@message.MessageId">@message.Rating votes</span>
+				    <button class="postdownvote" data-postid="@message.MessageId"></button>
+	    </div>
+        <div class="Clear"></div>
+	    <div class="Post">
+            @message.MessageContent
+        </div>
+    </section>
+}
+
+<nav id="Paging">
+    @if (ViewBag.PageNumber != 1)
+    {
+        <a href="~/Home/Index?pageNumber=1">First</a>
+    }
+    @if (ViewBag.PageNumber - 1 > 0)
+    {
+        <a href="~/Home/Index?pageNumber=@(ViewBag.PageNumber - 1)">Prev</a>
+    }
+    @for (int i = 1; i <= ViewBag.PagesCount; i++)
+    {
+        <a href="~/Home/Index?pageNumber=@i">@i</a>
+    }
+    @if (ViewBag.PageNumber + 1 <= ViewBag.PagesCount)
+    {
+        <a href="~/Home/Index?pageNumber=@(ViewBag.PageNumber + 1)">Next</a>
+    }
+    @if (ViewBag.PageNumber != ViewBag.PagesCount && ViewBag.PagesCount != 0)
+    {
+        <a href="~/Home/Index?pageNumber=@ViewBag.PagesCount">Last</a>
+    }
+</nav>
+<form id="WritePost" action="~/Home/PostMessage" method="post">
+    <div id="WritePostHeader">
+        <label for="author">
+            Author:</label>
+        <input id="NewPostAuthor" type="text" name="author" />
+        <label for="date">
+            Date:</label>
+        <input id="NewPostDate" type="text" value="@DateTime.Now.Date.ToShortDateString()" name="date" disabled="disabled" />
+    </div>
+    <div id="WritePostBody">
+        <textarea id="NewPostMessage" name="NewPostMessage"></textarea>
+        <input id="NewPostSubmit" type="submit" value="Post" />
+    </div>
+    <div class="Clear"></div>
+</form>

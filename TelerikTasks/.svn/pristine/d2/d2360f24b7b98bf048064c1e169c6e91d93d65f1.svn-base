@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html>
+
+<head>
+   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Task06</title>
+    <link rel="stylesheet" href="Task06-styles.css" />
+    <script src="Task06.js" type="text/javascript">
+  	</script>
+</head>
+
+<body onload="startScroll()">
+	<div id="main">
+		<div id="text">
+			Text to be moved right to left!
+		</div>
+	</div>
+</body>
+
+</html>

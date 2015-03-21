@@ -1,0 +1,42 @@
+#ticket
+{
+	width: 400px;
+	background-color: #807979;
+	float:left;
+	border: 1px solid red;
+}
+#right
+{
+
+float:right;
+}
+td
+{
+	text-valign = "top";
+}
+
+.color1
+{
+	color :#feff99;
+}
+
+#support
+ {
+color: #ff0000;
+}
+
+#status
+{
+	color: orange;
+}
+
+.color2
+{
+	color: #BFBBBD;
+}
+
+#bullet {
+background-image: url("green-bullet.png");
+background-position: left center;
+background-repeat: no-repeat;
+padding-left: 20px;

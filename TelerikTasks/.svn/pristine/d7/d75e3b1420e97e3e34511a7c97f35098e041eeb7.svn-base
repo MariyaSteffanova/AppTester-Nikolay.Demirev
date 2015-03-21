@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="~/Content/form-style.css" />
+    <link rel="stylesheet" href="~/Content/chatroomsStyles.css" />
+	<title>Just Chat</title>
+</head>
+<body>
+    <div id="wraper">
+        <header>
+        	<h2>JustChat (Logged as @Session["User"])</h2>
+        </header>
+        <section id="roomsList">
+        	<header id="roomsListHeader">
+            	Available rooms:
+            </header>
+            @foreach (var chatRoom in ViewBag.ChatRomsList)
+            {
+                <a class="roomFromList" href="#" >@chatRoom.ChatRoomName</a>
+            }
+        </section>
+        <section id="openedRooms">
+        	<form class="form">
+	            <header class="formHeader">
+                    <div class="formTitle">
+                        Login
+                    </div>
+                    <button class="closeButton" id"" ></button>
+                </header>
+                <section class="formBody">
+                	dasdasld;asd as'dlasldal ';dla'l dals d;las; lda;l ';adls; ldá; lsda 'nkglshkj;ldfja s;fkja;sk jf;aksj f;kajs; kfja;sdkjf ;aksjf;k jas;dfkj a;ksjdf;k ajs;dfkj a;skjdf;k ajs;dfkj ;asjdf; jas;dfkj ;aklsjdf; klajsd;fkj as;kldfj ;aklsjdfk jas;dfkj a;dskfj ;aklsjf;lkaj sdklfjaslk dfja;dslkjf ;laskjdf;lk jas;kldjf ;alksjdf; kljas;dlfkj a;lsdkjf; aklsjf;klj w;eijrfio asjgkjas; kldjf;ls f;laskdjf;l kajds;fklj ;askjdf; kladsj
+                </section>
+                <section class="submit">
+                	<input type="text" name="message" class="formTextbox" />
+                    <input class="formSubmitButton" type="submit" value="send" />
+                </section>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

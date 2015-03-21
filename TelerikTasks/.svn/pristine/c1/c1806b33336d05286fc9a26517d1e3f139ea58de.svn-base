@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<META Http-Equiv="Content-Type" Content="text/html; charset=windows-1251">
+	<link rel="stylesheet" href="Task02-styles.css" />
+</head>
+
+<body>
+	<table>
+	<thead>
+		<tr>
+			<th class="th-contact-name">Contact Name</th>			
+			<th class="th-city">City</th>			
+			<th class="th-country">Country</th>
+			<th class="th-is-promoted">Is Promoted</th>
+		</tr>
+	</thead>
+		
+		<tr>
+			<td>Maria Anders</td>			
+			<td>Berlin</td>			
+			<td>
+				<img src="germany.jpg" />
+				Germany
+			</td>
+			<td>
+				<input type="checkbox" disabled="disabled" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Ana Trujillo</td>			
+			<td>Mexico D.F.</td>			
+			<td>
+				<img src="mexico.gif" />
+				Mexico
+			</td>
+			<td>
+				<input type="checkbox" disabled="disabled" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Antonio Moreno</td>			
+			<td>Mexico D.F.</td>			
+			<td>
+				<img src="mexico.gif" />
+				Mexico
+			</td>
+			<td>
+				<input type="checkbox" disabled="disabled" checked="checked"/>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Thomas Hardy</td>			
+			<td>London</td>			
+			<td>
+				<img src="uk.jpg" />
+				UK
+			</td>
+			<td>
+				<input type="checkbox" disabled="disabled" />
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

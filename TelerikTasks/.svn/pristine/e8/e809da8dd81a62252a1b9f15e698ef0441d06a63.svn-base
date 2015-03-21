@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet">
+<title>Simple message board</title>
+</head>
+
+<body>
+	<div id="wrapper">
+	    <header>
+    		<h1>Simple Message Board</h1>
+	    </header>
+        <section class="UserPost">
+        	<div class="Author">Author: <strong>Maria</strong></div>
+            <div class="Date">Date: <strong>28-May-2012</strong></div>
+	        <div class="Votes">
+            	<button class="VoteUp"></button>
+	        	<span class="Score">8 votes</span>
+                <button class="VoteDown"></button>
+	        </div>
+            <div class="Clear"></div>
+	        <div class="Post">
+            	dasd;lads;l\asldals'dkla'dgsk;l;lakdsfkasd'fk;l ás;ldkf';l aksdf'k as'dklf'a;lskdf';l kasd'fkl ás;ldkfá;l skdf';laks'df;lka'ds;lkfás;ldkf';l aksd'f;lk a'dsklf'askldf';l aksdf';lk a'sdf;lk ás;ldkf'as;ldkfá;l skdf';l kas'df;lka's;ldkfáds;lkfá;l skdf'kl as'd;lfk ás;ldkf';aksdf'kl as'dfk áds;lkf';adskf'kl
+            </div>
+        </section>
+        <section class="UserPost">
+        	<div class="Author">Author: <strong>Maria</strong></div>
+            <div class="Date">Date: <strong>28-May-2012</strong></div>
+	        <div class="Votes">
+            	<button class="VoteUp"></button>
+	        	<span class="Score">8 votes</span>
+                <button class="VoteDown"></button>
+	        </div>
+            <div class="Clear"></div>
+	        <div class="Post">
+            	dasd;lads;l\asldals'dkla'dgsk;l;lakdsfkasd'fk;l ás;ldkf';l aksdf'k as'dklf'a;lskdf';l kasd'fkl ás;ldkfá;l skdf';laks'df;lka'ds;lkfás;ldkf';l aksd'f;lk a'dsklf'askldf';l aksdf';lk a'sdf;lk ás;ldkf'as;ldkfá;l skdf';l kas'df;lka's;ldkfáds;lkfá;l skdf'kl as'd;lfk ás;ldkf';aksdf'kl as'dfk áds;lkf';adskf'kl
+            </div>
+        </section>
+        <nav id="Paging">
+        	<a href="#">First</a>
+            <a href="#">Prev</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">Next</a>
+            <a href="#">Last</a>
+        </nav>
+        <form id="WritePost">
+        	<div id="WritePostHeader">
+	        	<label for="author">Author:</label>
+                <input id="NewPostAuthor" type="text" name="author" />
+	            <label for="date">Date:</label>
+                <input id="NewPostDate" type="text" value="28-May-2012" name="date" disabled="disabled"  />
+            </div>
+            <div id="WritePostBody">
+            	<textarea  id="NewPostMessage"> </textarea>
+                <input id="NewPostSubmit" type="submit" value="Post"  />
+            </div>
+            <div class="Clear"></div>
+        </form>
+     	<footer><h3>© 2012 - Software Engineering Basics</h3></footer>
+    </div>
+</body>
+</html>

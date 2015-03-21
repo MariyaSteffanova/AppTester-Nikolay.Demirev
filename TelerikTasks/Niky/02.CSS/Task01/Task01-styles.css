@@ -1,0 +1,51 @@
+td
+{
+	padding: 4px;
+}
+
+#ticket
+{
+	background-color: #5d7373;
+	width: 500px;
+}
+
+#ticket-id
+{
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.left-column
+{
+	width: 250px;
+	font-style:italic;
+	font-weight: bold;
+	color: #C9C6C2;
+}
+
+.right-column
+{
+	width: 250px;
+}
+
+.gray-text
+{
+	color: #A5A082;
+}
+
+.white-text
+{
+	color: #F4EDAA;
+}
+
+.red-text
+{
+	color: red;
+	font-weight:bolder;
+}
+
+.orange-text
+{
+	color: #C9692A;
+	font-weight:bolder;
+}

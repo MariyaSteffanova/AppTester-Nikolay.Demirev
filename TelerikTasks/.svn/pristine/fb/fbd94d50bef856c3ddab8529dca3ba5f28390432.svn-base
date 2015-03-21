@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Task One</title>
+		<link type="text/css" rel="stylesheet" href="style.css"  />
+	</head>
+	<body>
+		<div id="ticket">
+		<h1>Ticket ID: 409788</h1>
+		<table cellpadding = "5">
+			<colgroup>
+			   <col style="width:120px" />
+			</colgroup>
+			<tr>
+				<td valign = "top">Name:</td>
+				<td>
+				<span id="bullet"></span>
+				<span class="color1">Parker Seidel</span><br />
+				<span id="support">No Active Support</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><span class="color1">seidel@aptmail.com</span></td>
+			</tr>
+			<tr>
+				<td>Response Time:</td>
+				<td><span class="color2">72hours, 62hours left</span></td>
+			</tr>
+			<tr>
+				<td>Last Action</td>
+				<td><span class="color2">Never been locked.</span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><span class="color1">Link to public host</span></td>
+			</tr>
+			<tr>
+				<td>Status:</td>
+				<td><span id="status">Not Answered</span></td>
+			</tr>
+		
+		
+		</table>
+		</div>
+		<div>right</div>
+	</body>
+</html>

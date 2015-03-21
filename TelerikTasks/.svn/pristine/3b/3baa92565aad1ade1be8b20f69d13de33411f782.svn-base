@@ -1,0 +1,80 @@
+#outerFrame
+{
+	position: absolute;
+	border: 3px solid black;
+	border-radius: 15px 15px 15px 15px;
+	height:520px;
+	width: 1000px;
+}
+#innerFrame
+{
+	position:absolute;
+	left: 10px;
+	background-color: #7570FF;
+	border-radius: 15px 15px 15px 15px;
+	height:420px;
+	width: 900px;
+}
+h1
+{
+	padding-left:40px;
+}
+#screen
+{
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	background-image: url(wars.jpg);
+	background-color: white;
+	background-size: 400px;
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	height:300px;
+	width: 400px;
+	float: left;
+}
+#list
+{
+	position: absolute;
+	left: 600px;
+	top: 35px;
+	overflow-y: scroll;
+}
+div div p a
+{
+	color: grey;
+}
+div div div span
+{
+	width: 300px;
+}
+
+#sliderPlayer
+{
+	position: absolute;
+	top: 320px;
+	left: 40px;
+}
+#buttons
+{
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+}
+#time
+{
+	position: absolute;
+	left: 445px;
+	bottom: 80px;
+}
+#percentage
+{
+	position: absolute;
+	left: 730px;
+	bottom: 40px;
+}
+#sliderVolume
+{
+	position: absolute;
+	left: 540px;
+	bottom: 40px;

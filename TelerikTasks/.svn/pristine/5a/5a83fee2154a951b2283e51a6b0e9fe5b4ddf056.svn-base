@@ -1,0 +1,55 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <title>HTML5 - Task03</title>
+</head>
+
+<body>
+    
+    <ol type="1">
+    <li><a href="#lstItem1" >HTML Introduction</a></li>
+    <li><a href="#lstItem2" >HTML Get Started</a></li>
+    <li><a href="#lstItem3" >HTML Basics</a></li>
+    </ol>
+    <br /> 
+
+    <ol type="1">
+    
+    <li>
+        <strong>Introduction</strong>
+        <div id="lstItem1">
+        What is Html?
+        <ul type="disc">
+        <li>Some text I was too lazy to write</li><br />
+        <li>Some text I was too lazy to write</li><br />
+        <li>Some text I was too lazy to write</li><br />
+        <li>Some text I was too lazy to write</li><br />
+        </ul>
+        </div>
+    </li>
+    
+    <li>
+        <strong>Get started</strong>
+        <div id="lstItem2">     
+        <p> Editing HTML <br />
+            Some text I was too lazy to write.Some text I was too lazy to write. <br />
+            Some text I was too lazy to write.Some text I was too lazy to write. <br />
+            Some text I was too lazy to write.Some text I was too lazy to write. <br />
+        </p>
+        </div>
+    </li>
+    <br />
+    <li>
+        <strong>Basics</strong>
+        <div id="lstItem3">
+         Some text I was too lazy to write. Some text I was too lazy to write.<br />
+         Some text I was too lazy to write. Some text I was too lazy to write.<br />
+        </div>
+    </li>
+    <br />
+    </ol>
+</body>
+
+</html>

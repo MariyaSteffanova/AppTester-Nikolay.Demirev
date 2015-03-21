@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SimpleChatDal.Message>
+
+@foreach (var item in Model) {
+    <tr data-pkey="@item.MessageID">
+        <td>
+            @Html.DisplayFor(modelItem => item.ChatRoom.ChatRoomName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MessageText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MessageDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Author)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorIP)
+        </td>
+        <td class="rowControl hidden">
+            <a href="#makeRowEditable" class="makeRowEditable">Edit</a> |
+            <a href="#deleteRow" class="deleteRow">Delete</a>
+        </td>
+    </tr>
+}

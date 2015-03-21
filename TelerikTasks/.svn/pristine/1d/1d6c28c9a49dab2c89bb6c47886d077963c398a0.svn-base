@@ -1,0 +1,16 @@
+﻿@model IEnumerable<JustPoll.DAL.Poll>
+
+@foreach (var item in Model) {
+    <tr data-pkey="@item.id">
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td class="rowControl hidden">
+            <a href="#makeRowEditable" class="makeRowEditable">Edit</a> |
+            <a href="#deleteRow" class="deleteRow">Delete</a>
+        </td>
+    </tr>
+}

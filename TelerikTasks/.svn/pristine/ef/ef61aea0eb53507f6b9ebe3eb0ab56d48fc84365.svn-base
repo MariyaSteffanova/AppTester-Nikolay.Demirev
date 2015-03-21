@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+.form{
+	margin:auto;
+	width:356px;
+	background:#000000;
+	background-image:url(images/FormBackground.jpg);
+	padding: 3px;
+	padding-bottom:10px;
+	height:143px;
+	border-radius:5px 5px 5px 5px;
+	color:#FFFFFF;
+}
+
+.formHeader{
+	margin:auto;
+	background-image:url(images/FormHeader.jpg);
+	height:33px;
+	border:solid #333333 2px;
+	border-radius: 5px 5px 5px 5px;
+	width:348px;
+	margin-bottom:10px;
+}
+
+.formTitle{
+	float:left;
+	padding-left:15px;
+	padding-top:6px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+.closeButton{
+	background-image:url(images/FormCloseButton.jpg);
+	float:right;
+	border:0;
+	width:11px;
+	height:11px;
+	margin-top:10px;
+	margin-right:10px;
+}
+
+.formBody{
+	text-align:center;
+	padding-bottom:22px;
+}
+
+.formLabel{
+	color:#EEEEEE;
+	background-image:url(images/LabelBackground.jpg);
+	padding: 2px;
+}
+
+.formTextbox{
+	color:#EEEEEE;
+	background-image:url(images/fromTextboxBackground.jpg);
+	border:0;
+	height:24px;
+	width:215px;
+}
+
+.submit{
+	text-align:center;
+}
+
+.formSubmitButton{
+	background-image:url(images/FormButtonBackground.jpg);
+	border:0;
+	height:37px;
+	width:81px;
+	border-radius:8px 8px 8px 8px;
+	color:#FFFFFF;
+	font-weight:bold;
+	cursor:pointer;
+}
+.clear
+{
+	clear:both;
+}

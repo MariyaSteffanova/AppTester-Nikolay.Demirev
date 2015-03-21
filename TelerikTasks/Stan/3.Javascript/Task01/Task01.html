@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Task01</title>
+    
+    <script type="text/javascript">
+		function buttonClick() 
+		{
+			var msg = document.getElementById('firstName').value;
+			msg += " ";
+			msg += document.getElementById('lastName').value;
+			msg += " ";
+			msg += new Date();
+			
+			alert(msg);
+		}
+	</script>
+
+</head>
+
+<body>
+    <form>
+    	<input type="text" required id="firstName" value="First Name" />
+        <input type="text" required id="lastName" value="Last Name" />
+        <input type="submit"  onClick="buttonClick()"  value="Click me!" />
+    </form>
+</body>
+
+</html>

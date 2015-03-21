@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMessageBoard.DAL", "SimpleMessageBoard.DAL\SimpleMessageBoard.DAL.csproj", "{52F03A46-229E-40CF-A4D3-C3A9A49EEDFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task01", "Task01\Task01.csproj", "{928E2B46-E73D-4512-8ABC-C4BB0D07EECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMessageBoardMvc", "SimpleMessageBoardMvc\SimpleMessageBoardMvc.csproj", "{C7701496-BF09-4CF0-9CA6-6599270CBAA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52F03A46-229E-40CF-A4D3-C3A9A49EEDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F03A46-229E-40CF-A4D3-C3A9A49EEDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F03A46-229E-40CF-A4D3-C3A9A49EEDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F03A46-229E-40CF-A4D3-C3A9A49EEDFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928E2B46-E73D-4512-8ABC-C4BB0D07EECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928E2B46-E73D-4512-8ABC-C4BB0D07EECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928E2B46-E73D-4512-8ABC-C4BB0D07EECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928E2B46-E73D-4512-8ABC-C4BB0D07EECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7701496-BF09-4CF0-9CA6-6599270CBAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7701496-BF09-4CF0-9CA6-6599270CBAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7701496-BF09-4CF0-9CA6-6599270CBAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7701496-BF09-4CF0-9CA6-6599270CBAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

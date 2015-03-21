@@ -1,0 +1,52 @@
+<ol type="1">
+	<li><a href="">HTML Introduction</a></li>
+	<li><a href="">HTML Get Started</a></li>
+	<li><a href="">HTML Basics</a></li>
+</ol>
+<div>
+	<ol type="1">
+		<li><b>Introduction:</b></li>
+		<div>
+			What is HTML?<br />
+			HTML is a language for describing web pages.
+			<ul type="disc">
+				<li>HTML stands for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</li>
+				<li>HTML is not a programming language, it is a <b>markup language</b></li>
+				<li>A markup language is a set of <b>markup tags</b></li>
+				<li>HTML uses <b>markup tags</b> to describe web pages</li>
+			</ul>
+			<br />
+		</div>
+		<li><b>Get Started</b></li>
+		<br />
+		<div>
+			Editing HTML<br />
+			In this tutorial we use a plain text editor (like Notepad) to edit HTML. We believe this is the best way to learn HTML.<br />
+			However, professional web developers often prefer HTML editors like FrontPage or Dreamweaver, instead of writing plain text.<br />
+			<br />
+		</div>
+		<li><b>Basics</b></li>
+		<div>
+			<br />
+			HTML Headings<br />
+			HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.<br />
+		</div>
+		<br />
+		<div>
+			<table border="0">
+				<tr>
+					<td>
+						<xmp><h1>This is a heading</h1></xmp>
+						<xmp><h2>This is a heading</h2></xmp>
+						<xmp><h3>This is a heading</h3></xmp>
+					</td>
+					<td>
+						<h1>This is a heading</h1>
+						<h2>This is a heading</h2>
+						<h3>This is a heading</h3>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</ol>
+</div>

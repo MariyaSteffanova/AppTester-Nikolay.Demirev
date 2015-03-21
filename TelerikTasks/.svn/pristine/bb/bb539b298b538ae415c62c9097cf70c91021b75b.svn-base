@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		 Star Wars
+		</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="outerFrame">
+			<h1>Web design Video Player</h1>
+			<div id="innerFrame">
+				<div id="screen"></div>
+				<div id="list">
+					<p><a href="http://google.com">Episode 1: Phantom Menace</a></p>
+					<p><a href="http://google.com">Episode 2: Attack of the clones</a></p>
+					<p><a href="http://google.com">Episode 3: Revenge of the sith</a></p>
+					<p><a href="http://google.com">Episode 3: A new hope</a></p>
+					<p><a href="http://google.com">Episode 4: Empire strickes back</a></p>
+					<p><a href="http://google.com">Episode 5: Return of the jedi</a></p>
+				</div>
+				
+				<div id="buttons">
+					<input type="button" name="button" value="  Previous " />
+					<input type="button" name="button" value="    Play    " />
+					<input type="button" name="button" value="   Pause   " />
+					<input type="button" name="button" value="    Stop    " />
+					<input type="button" name="button" value="   Next    " />
+				</div>
+				<div id="sliderPlayer">
+					<label for "playback">Playback</label>
+					<input type="range" name="playback" style= "width:330px";/>
+				</div>
+				<span id="time">
+					01:23:35/01:29:47
+				</span>
+				<span id="percentage">
+					73%
+				</span>
+				<div id="sliderVolume">
+					<label for "volume">Volume</label>
+					<input type="range" name="volume"/>
+				</div>
+				<div id="screen"></div>
+			</div>
+		</div>
+	</body>
+</html>

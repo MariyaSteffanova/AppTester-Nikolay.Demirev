@@ -1,0 +1,1 @@
+SELECT top 5 LastName, Salary FROM Employees order by Salary Desc 

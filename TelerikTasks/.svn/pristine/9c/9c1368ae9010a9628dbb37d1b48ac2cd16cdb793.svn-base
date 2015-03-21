@@ -1,0 +1,47 @@
+body
+{
+	font-family:verdana;
+	font-size: 14px;
+}
+
+th, td
+{
+	text-align: left;
+	padding: 3px;
+}
+
+tr:nth-child(even) 
+{
+	background-color: #ECECD8
+}
+
+tr:nth-child(odd) 
+{
+	background-color: #FFFFFF
+}
+
+th
+{
+	background-color: #53B606;
+	color: #FFFFFF;
+}
+
+th.th-contact-name
+{
+	width: 200px;
+}
+
+th.th-city
+{
+	width: 200px;
+}
+
+th.th-country
+{
+	width: 200px;
+}
+
+th.th-is-promoted
+{
+	width: 100px;
+}

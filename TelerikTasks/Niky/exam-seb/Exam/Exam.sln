@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{F654E5D6-6056-4DE4-8BD1-E2DE8DF214E4}"
+	ProjectSection(SolutionItems) = preProject
+		Task01\index.html = Task01\index.html
+		Task01\styles.css = Task01\styles.css
+		Task01\VotingPage.html = Task01\VotingPage.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{E48D4B19-F5B0-4964-B4AD-E99E723E7F23}"
+	ProjectSection(SolutionItems) = preProject
+		Task01\images\body-background.png = Task01\images\body-background.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task02-JustPoll.DAL", "JustPoll.DAL\Task02-JustPoll.DAL.csproj", "{9E02AD66-F65B-4C82-90B9-D87538383D5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task05-JustPollAdministrator", "JustPollAdministrator\Task05-JustPollAdministrator.csproj", "{9BA5376C-5C9D-45A6-81F6-7A900451FEF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task04-MVC", "JustPoll\Task04-MVC.csproj", "{E92450E5-6AC9-4B2A-B504-FADF180EC02E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{AB5F3AD4-4103-41B0-8EB1-BC95DA44E3F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E02AD66-F65B-4C82-90B9-D87538383D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E02AD66-F65B-4C82-90B9-D87538383D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E02AD66-F65B-4C82-90B9-D87538383D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E02AD66-F65B-4C82-90B9-D87538383D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA5376C-5C9D-45A6-81F6-7A900451FEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA5376C-5C9D-45A6-81F6-7A900451FEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA5376C-5C9D-45A6-81F6-7A900451FEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA5376C-5C9D-45A6-81F6-7A900451FEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E92450E5-6AC9-4B2A-B504-FADF180EC02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E92450E5-6AC9-4B2A-B504-FADF180EC02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E92450E5-6AC9-4B2A-B504-FADF180EC02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E92450E5-6AC9-4B2A-B504-FADF180EC02E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E48D4B19-F5B0-4964-B4AD-E99E723E7F23} = {F654E5D6-6056-4DE4-8BD1-E2DE8DF214E4}
+	EndGlobalSection
+EndGlobal

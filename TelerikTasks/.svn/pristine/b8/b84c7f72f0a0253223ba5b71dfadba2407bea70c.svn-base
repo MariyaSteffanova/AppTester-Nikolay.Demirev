@@ -1,0 +1,10 @@
+<html>
+<head>
+<script src="script.js" type="text/javascript">
+   </script>
+</head>
+
+<body onLoad="AskForUserName()" >
+</body>
+
+</html>

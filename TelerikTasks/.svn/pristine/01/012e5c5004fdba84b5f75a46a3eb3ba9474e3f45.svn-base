@@ -1,0 +1,68 @@
+﻿<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <title>HTML5 - Task05</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <table border = "1" cellpadding="15">
+		<colgroup>
+			<col width="200" />
+			<col width="550" />
+		</colgroup>
+        <tr>
+            <td>
+                <div>
+                    <img src="book_cover.jpg" />
+                    <center>Автор: <strong>Светлин Наков</strong></center>
+				    <center>Издателство: <strong>Faber, 2004</strong></center>
+				    <center>ISBN<strong>954-775-305-3</strong></center>
+				    <center>Страници:<strong>233с</strong></center>
+				    <center>Лиценз: <strong>Свободен</strong></center>
+				    <br />
+				    <center>Официален спонсор:</center>
+				    <br />
+				    <img src="logo-bars.jpg" /> 
+                </div>
+                
+            </td>
+				
+            <td>
+                <div>
+                	<center><h1>Интернет пгорамиране с Java</h1></center>
+				    <dl>
+					    <dt><strong>За автора</strong></dt>
+					    <dd>Личен сайт: <a href="http://www.nakov.com/">www.nakov.com</a></dd>
+					    <dd>E-mail: <a href="mailto:inetjava-book@nakov.com">inetjava-book@nakov.com</a></dd>
+					    <br />
+					
+					    <dt><strong>Съдържание: </strong></dt>
+					    <dd>Разгледайте <a href="http://www.google.com/">съдържанието</a> на книгата</dd>
+					    <br />
+					
+					    <dt><strong>Прочетете книгата on-line:</strong></dt>
+					    <dd><a href="http://www.google.com/">HTML файл (2.37MB)</a></dd>	
+					    <br />
+					
+					    <dt><strong> Изтеглете електронния вариант на книгата:</strong></dt>
+					    <dd><a href="http://www.gooogle.com/">DOC файл (2.72MB)</a>   <a href="http://www.gooogle.com/">PDF файл (2.94MB)</a></dd>
+						<br />
+					
+						<dt><strong>Отзиви</strong></dt>
+						<dd>Прочетете <a href="http://www.google.com/">отзивите</a> от научните редактори</dd>
+						<br />
+						
+						<dt><strong>Дискусионен форум:</strong></dt>
+						<dd>Чувствайте се свободни да задавате вашите въпрос, свързани в книгата, във <a href="http://www.google.com/">форума</a></dd>
+						
+					</dl>
+                </div>			
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

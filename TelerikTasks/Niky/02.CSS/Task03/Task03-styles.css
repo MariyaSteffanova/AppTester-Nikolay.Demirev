@@ -1,0 +1,57 @@
+div#main-frame
+{
+	border-width: 4px;
+	border-color: gray;
+	border-style: double;
+	border-radius: 25px;
+	width: 850px;
+	height: 650px;
+}
+
+div#player
+{
+	background-color: #39F;
+	width: 800px;
+	height: 525px;	
+	border-width : 0;
+	border-radius: 25px;
+}
+
+div#player-list
+{
+	text-align: left;
+	overflow-y: scroll;
+}
+
+th
+{
+	text-align: left;
+}
+
+td
+{
+	padding: 10px;
+}
+
+img#duel
+{
+	width: 500px;
+	height: 350px;
+}
+
+a:visited, a
+{
+	color: green;
+	list-style: none;
+}
+
+#movie-time
+{
+	width: 430px;
+}
+
+button.movie-control
+{
+	width: 90px;
+	margin-right: 5px;
+}

@@ -1,0 +1,150 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: droid sans;
+}
+#outerFrame
+{
+	position: absolute;
+	top: 20px;
+	left: 230px;
+	width: 650px;
+	height: 450px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+#head
+{
+	position: absolute;
+	text-align: center;
+	width: 600px;
+	border-bottom: 2px solid black;
+	padding-bottom: 10px;
+	left: 25px;
+	top: 10px;
+	color: #14CCC0;
+}
+#innerFrame
+{
+	position: absolute;
+	top: 55px;
+	left: 10px;
+	height: 380px;
+	width: 380px;
+	border: 2px solid black;
+}
+#innerFrame2
+{
+	position: absolute;
+	top: 55px;
+	left: 395px;
+	height: 380px;
+	width: 250px;
+}
+#cell1
+{
+	position: absolute;
+	left: 8px;
+	top:10px;
+	font-size: 12px;
+	width: 170px;
+	height: 110px;
+}
+#cell4
+{
+	position: absolute;
+	left: 195px;
+	top:10px;
+	font-size: 12px;
+	width: 170px;
+	height: 110px;
+}
+#cell2
+{
+	position: absolute;
+	left: 8px;
+	top:130px;
+	font-size: 12px;
+	width: 170px;
+	height: 110px;
+}
+#cell5
+{
+	position: absolute;
+	left:195px;
+	top:130px;
+	font-size: 12px;
+	width: 170px;
+	height: 110px;
+}
+#cell3
+{
+	position: absolute;
+	left: 8px;
+	top: 250px;
+	font-size: 12px;
+	width: 170px;
+	height: 110px;
+}
+#cell6
+{
+	position: absolute;
+	left: 195px;
+	top: 250px;
+	font-size: 12px;
+	width: 170px;
+	height: 110px;
+}
+fieldset .image
+{
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	height: 50px;
+	width: 77px;
+	background-image: url(images/laptop.jpg);
+	background-repeat: no-repeat;
+	background-size: 80px;
+	
+}
+.hard
+{
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+.ram
+{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+}
+.cpu
+{
+	position: absolute;
+	top: 90px;
+	left: 100px;
+}
+.price
+{
+	position: absolute;
+	top: 90px;
+	left: 20px;
+}
+.smal
+{
+	font-size: 11px;
+}
+.mPrice
+{
+	padding: 5px;
+	text-align: center;
+	margin: 10px;
+}
+.range
+{
+	position: relative;
+	left: 29px;
+	
+}

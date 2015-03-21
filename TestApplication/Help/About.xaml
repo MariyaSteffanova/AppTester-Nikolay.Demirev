@@ -1,0 +1,36 @@
+﻿<Window x:Class="TestApplication.Help.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="298" Width="384" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="70*" />
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="70*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ContentPresenter Content="{Binding Path=NikysPicture, Mode=OneWay}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" />
+        <Label Content="Николай Демирев" Grid.Column="1" Grid.Row="0" />
+        <TextBlock Grid.Column="1" Grid.Row="1">
+            <Hyperlink Command="{Binding Path=MailToNiky, Mode=OneWay}" >
+                <ContentPresenter Content="Nikolay_Demirev@anteni.biz" />
+            </Hyperlink>
+        </TextBlock>
+
+        <ContentPresenter Content="{Binding Path=StansPicture, Mode=OneWay}" Grid.Column="0" Grid.Row="3" Grid.RowSpan="3" />
+        <Label Content="Станислав Радков" Grid.Column="1" Grid.Row="3" />
+        <TextBlock Grid.Column="1" Grid.Row="4">
+            <Hyperlink Command="{Binding Path=MailToStan, Mode=OneWay}" >
+                <ContentPresenter Content="Stanislav.vr@gmail.com" />
+            </Hyperlink>
+        </TextBlock>
+    </Grid>
+</Window>
